@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1150px)" href="phone.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar h-nav">
+    <ul class="navList v-class">
+      <li><a href="/" >Home</a></li>
+      <li><a href="/About.html" >About</a></li>
+      <li><a href="/Skills.html">Skills</a></li>
+      <li><a href="/Contact.html" class="active">Contact-Me</a></li>
+    </ul>
+    <div class="navbar-left">
+      <h2>NVR's &nbsp;<span>Portfolio</span></h2>
+    </div>
+    <div class="burger">
+      <div class="lines"></div>
+      <div class="lines"></div>
+      <div class="lines"></div>
+    </div>
+  </nav>
+  <section class="contact-container">
+    <h1>Contact&nbsp;<span>Me!</span></h1>
+    <form id="form" action="/" method="POST">
+      <!-- action="https://formspree.io/f/meqwrkbk" method="POST" -->
+      <div class="input-control1" id="inputs">
+        <label for="myname"></label>
+        <input
+        id="myname"
+          name="myname1"
+          type="text"
+          placeholder="Full Name"
+          required
+        />
+        <label for="email"></label>
+        <input
+        id="email"
+          name="Email"
+          type="Email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="input-control2" id="inputs">
+        <label for="tel"></label>
+        <input
+        id="tel"
+        name="mytel"
+        type="phone"
+        pattern="[0-9]{4}[0-9]{3}[0-9]{3}"
+        placeholder="Phone Number"
+        required
+        />
+        <label for="email"></label>
+        <input
+        id="email"
+        name="Subject"
+        type="text"
+        placeholder="Subject"
+        required
+        />
+      </div>
+      <div class="input-control3" id="inputs1">
+        <label for="text" class="textarea1">
+        </label>
+        <textarea
+          id="text"
+          placeholder="Message"
+          name="message"
+          rows="4"
+          cols="38.98"
+          required
+          ></textarea>
+        </div>
+        <div id="btn-box2" class="btn-box">
+          <button id="button" type="submit" value="Submit" onsubmit="myFunction();">Submit</button>
+        </div>
+      </form>
+  </section>
+  <footer class="footerr">
+    <div class="footer-media">
+      <a href="https://github.com/BNVR"><img class="img-2" src="./pics/gitt.png" /></a>
+      <a href="https://www.linkedin.com/in/venkata-ramana-a81391254/"><img class="img-2" src="./pics/link.png" /></a>
+      <a href="/Contact.html"><img class="img-3" src="./pics/mail.png" /></a>
+    </div>
+    <div class="footer-end">
+      <h1>Copyright © wwww.nvr-portfolio.in, All Rights Reserved!</h1>
+    </div>
+    
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
